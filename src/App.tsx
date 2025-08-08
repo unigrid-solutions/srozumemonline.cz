@@ -43,7 +43,7 @@ export default function InternetSafetyLanding() {
               Bezpečnost na internetu & základní kybernetická bezpečnost
             </div>
             <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-              Praktické přednášky, díky kterým bude vaše online fungování <span className="text-orange-600">bezpečnější</span>.
+              Praktické přednášky, díky kterým bude <span className="text-blue-600">online</span> více v <span className="text-orange-600">bezpečí</span>.
             </h1>
             <p className="mt-4 text-zinc-700 text-lg">
               Navštěvujeme školy, knihovny a veřejné instituce po celé ČR a učíme jednoduché, účinné návyky proti nejčastějším online rizikům.
@@ -57,8 +57,8 @@ export default function InternetSafetyLanding() {
               </a>
             </div>
             <div className="mt-6 flex items-center gap-4 text-sm text-zinc-600">
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600"/> 60–90 min bloky</div>
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600"/> Obsah podle věku</div>
+              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600"/> 90-120min bloky</div>
+              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600"/> Vhodné pro všechny <br></br>věkové kategorie</div>
               <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600"/> Plná česká lokalizace</div>
             </div>
           </div>
@@ -67,13 +67,7 @@ export default function InternetSafetyLanding() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-zinc-100 to-zinc-200 border border-zinc-200 overflow-hidden shadow-sm">
               <div className="absolute inset-0 grid place-content-center">
-                <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="opacity-80">
-                  <rect x="35" y="35" width="170" height="170" rx="18" className="fill-white"/>
-                  <path d="M35 120h170" className="stroke-zinc-300" strokeWidth="2"/>
-                  <path d="M120 35v170" className="stroke-zinc-300" strokeWidth="2"/>
-                  <path d="M80 150h80" className="stroke-orange-500" strokeWidth="8" strokeLinecap="round"/>
-                  <path d="M70 95h100" className="stroke-zinc-300" strokeWidth="8" strokeLinecap="round"/>
-                </svg>
+                <img src="img/demo.jpeg" alt="Placeholder" className="h-full w-full rounded-xl object-cover" />
               </div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white border border-zinc-200 rounded-2xl p-4 shadow-sm flex items-center gap-3">
@@ -93,14 +87,20 @@ export default function InternetSafetyLanding() {
           <div className="lg:col-span-5">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Kdo jsme</h2>
             <p className="mt-4 text-zinc-700">
-              Jsme dva praktici, kteří spojují zkušenosti z IT a vzdělávání. Zaměřujeme se na to, co je pro běžné uživatele opravdu důležité: rozpoznat hrozby, správně nastavit zařízení a v klidu reagovat, když se něco pokazí.
+              Spojujeme zkušenosti z IT a kyberbezpečnosti se vzděláváním. Zaměřujeme se na to, co je pro běžné uživatele opravdu důležité: rozpoznání hrozby a klidná reakce.
             </p>
             <div className="mt-6 flex items-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-tr from-orange-500 to-rose-500"/>
-              <div className="h-12 w-12 rounded-full bg-gradient-to-tr from-sky-500 to-violet-500"/>
-              <p className="text-sm text-zinc-600">Zástupné avatary – vaše fotky doplníme později.</p>
+              <div>
+                <img src="img/brtnik_lite.jpeg" alt="Vláďa" className="h-36 w-36 rounded-xl object-cover border-2 border-white shadow-sm" />
+                <span>Vladislav Bouška<br></br>Lektor kyberbezpečnosti</span>
+              </div>
+              <div>
+                <img src="img/kubenzi.jpeg" alt="Kuba" className="h-36 w-36 rounded-xl object-cover border-2 border-white shadow-sm" />
+                <span>Jakub Englický<br></br>IT specialista a lektor</span>
+              </div>
             </div>
           </div>
+
           <div className="lg:col-span-7 grid sm:grid-cols-2 gap-4">
             {[
               { icon: Smartphone, title: "Hygiena smartphonů", text: "Aktualizace, oprávnění, zálohy – jednoduchý checklist, který zvládne každý." },
@@ -126,22 +126,20 @@ export default function InternetSafetyLanding() {
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Programy</h2>
               <p className="mt-2 text-zinc-700">Věkově přizpůsobené bloky pro školy i širokou veřejnost.</p>
             </div>
-            <a href="#rezervace" className="inline-flex items-center gap-2 text-sm font-medium text-orange-700 hover:text-orange-800">Rezervovat <ChevronRight className="h-4 w-4"/></a>
           </div>
-
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             {[{
-              badge: "1.–5. třída",
-              title: "První kroky online",
-              points: ["Co je soukromé?","Ohleduplnost & nahlášení","Jednoduchá pravidla pro zařízení"],
-            },{
-              badge: "6.–9. třída",
-              title: "Digitální stopa",
-              points: ["Sociální sítě","Podvody & hoaxy","Fotky & souhlas"],
-            },{
-              badge: "Střední / Veřejnost",
+              badge: "Veřejnost / školy",
               title: "Kyberbezpečnost na každý den",
-              points: ["Hesla & MFA","Phishing nanečisto","Ochrana peněz online"],
+              points: ["Jak se chránit před phishingem","Máte silné heslo? A mohla bych ho vidět?","AI: Dobrý sluha, špatný pán"],
+            },{
+              badge: "Připravujeme",
+              title: "Digitální stopa",
+              points: ["Sociální sítě","Podvody & hoaxy","Ochrana osobních údajů na webu"],
+            },{
+              badge: "Připravujeme",
+              title: "Online bezpečnost v praxi",
+              points: ["Jak poznat falešné e-shopy","Bezpečné nakupování a platby","Ochrana peněz online"],
             }].map((p, i) => (
               <article key={i} className="relative rounded-2xl border border-zinc-200 bg-gradient-to-b from-white to-zinc-50 p-6 hover:shadow-sm transition">
                 <span className="inline-flex text-[11px] uppercase tracking-wide font-semibold text-orange-700 bg-orange-50 border border-orange-200 rounded-full px-2 py-1">{p.badge}</span>
@@ -189,8 +187,8 @@ export default function InternetSafetyLanding() {
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Pro školy a instituce</h2>
             <ul className="mt-4 space-y-3 text-zinc-700">
-              <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> 60–90 min na třídu / publikum (max ~100)</li>
-              <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> V případě potřeby přivezeme vlastní techniku</li>
+              <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> 90-120 min na třídu / publikum</li>
+              <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> V případě potřeby přivezeme vlastní AV techniku</li>
               <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> Materiály pro rodiče i zaměstnance</li>
               <li className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0"/> Faktura a jednoduchá administrativa</li>
             </ul>
@@ -207,15 +205,15 @@ export default function InternetSafetyLanding() {
           {/* Ceník */}
           <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
             <p className="text-sm font-semibold text-orange-700">Ceník</p>
-            <h3 className="mt-1 text-3xl font-extrabold tracking-tight">Od 5 000 Kč / blok</h3>
+            <h3 className="mt-1 text-3xl font-extrabold tracking-tight">Od 9 999 Kč / blok</h3>
             <p className="mt-2 text-sm text-zinc-600">Finální cena závisí na velikosti publika, dopravě a formátu. Požádejte o nabídku na míru.</p>
             <ul className="mt-4 space-y-2 text-sm">
               <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600 mt-0.5"/> Sleva při více blocích v jeden den</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600 mt-0.5"/> Zvýhodněné ceny pro NNO a obce</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600 mt-0.5"/> Sleva při dlouhodobé spolupráci</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-600 mt-0.5"/> Úvodní konzultace zdarma</li>
             </ul>
             <a href="#rezervace" className="mt-6 inline-flex items-center justify-center w-full gap-2 px-4 py-2 rounded-xl bg-orange-600 text-white font-medium hover:bg-orange-700 transition">
-              <CalendarDays className="h-5 w-5"/> Chci nabídku
+              <CalendarDays className="h-5 w-5"/> Požádejte o nabídku na míru
             </a>
           </div>
         </div>
@@ -291,7 +289,7 @@ export default function InternetSafetyLanding() {
               a: "Určitě. Běžně realizujeme 2–4 bloky za sebou na jednom místě.",
             },{
               q: "Dostaneme materiály po přednášce?",
-              a: "Ano, zasíláme krátké shrnutí v PDF a odkazy na doporučené zdroje.",
+              a: "Ano, zasíláme krátké shrnutí v PDF a odkazy na doporučené zdroje. Na žádost můžeme poskytnout i tištěné materiály.",
             },{
               q: "Jakou techniku potřebujete?",
               a: "Projektor/TV s HDMI/USB‑C a u větších sálů mikrofon. V případě potřeby techniku přivezeme.",
@@ -307,7 +305,7 @@ export default function InternetSafetyLanding() {
 
       {/* Patička */}
       <footer className="py-10 border-t border-zinc-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 items-start">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-start">
           <div>
             <div className="flex items-center gap-3">
               <div className="h-9 w-9 bg-gradient-to-tr from-orange-500 to-rose-500 rounded-xl grid place-content-center text-white">
@@ -322,19 +320,19 @@ export default function InternetSafetyLanding() {
           <div>
             <p className="font-semibold">Kontakt</p>
             <ul className="mt-3 space-y-2 text-sm">
-              <li className="flex gap-2 items-center"><Mail className="h-4 w-4"/> info@srozumem.online</li>
-              <li className="flex gap-2 items-center"><Phone className="h-4 w-4"/> +420 000 000 000</li>
+              <li className="flex gap-2 items-center"><Mail className="h-4 w-4"/> info@srozumemonline.cz</li>
+              <li className="flex gap-2 items-center"><Phone className="h-4 w-4"/> +420 733 348 366</li>
               <li className="flex gap-2 items-center"><Globe className="h-4 w-4"/> Česká republika</li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <p className="font-semibold">Právní</p>
             <ul className="mt-3 space-y-2 text-sm text-zinc-600">
               <li>Údaje o společnosti</li>
               <li>Zásady ochrany osobních údajů</li>
               <li>Soubory cookie</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="mt-8 text-center text-xs text-zinc-500">© {new Date().getFullYear()} S rozumem online. Všechna práva vyhrazena.</div>
       </footer>
