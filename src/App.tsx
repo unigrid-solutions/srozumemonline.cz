@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ShieldCheck, School, Users, CalendarDays, MessageSquare, ChevronRight, Mail, Phone, Globe, Play, ExternalLink, BookOpen, Lock, Smartphone, GlobeLock, LaptopMinimal, CheckCircle2 } from "lucide-react";
 
 // Jednosouborová React komponenta s Tailwind CSS
