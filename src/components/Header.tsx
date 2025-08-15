@@ -44,7 +44,7 @@ export default function Header() {
           <div className="h-9 w-9 bg-gradient-to-tr from-orange-500 to-rose-500 rounded-xl grid place-content-center text-white shadow-md shadow-orange-500/20">
             <ShieldCheck className="h-5 w-5" />
           </div>
-          <span className="font-semibold tracking-tight sm:text-lg text-md text-zinc-900 dark:text-white">
+          <span className="font-semibold tracking-tight sm:text-lg text-base text-zinc-900 dark:text-white">
             S rozumem online
           </span>
         </a>

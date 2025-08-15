@@ -32,13 +32,13 @@ export default function ForSchools() {
           <div className="mt-6 flex gap-3">
             <a
               href="#rezervace"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-md"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-base"
             >
               <School className="h-5 w-5" /> Ověřit termín
             </a>
             <a
               href="#faq"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white transition duration-300 text-sm sm:text-md"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white transition duration-300 text-sm sm:text-base"
             >
               <ExternalLink className="h-5 w-5" /> Přečíst FAQ
             </a>
@@ -73,7 +73,7 @@ export default function ForSchools() {
           </ul>
           <a
             href="#rezervace"
-            className="mt-6 inline-flex items-center justify-center w-full gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-md"
+            className="mt-6 inline-flex items-center justify-center w-full gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-base"
           >
             <CalendarDays className="h-5 w-5" /> Požádejte o nabídku na míru
           </a>

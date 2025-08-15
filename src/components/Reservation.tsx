@@ -109,7 +109,7 @@ export default function Reservation() {
             </div>
             <button
               type="submit"
-              className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-200 transition duration-300 text-sm sm:text-md cursor-pointer"
+              className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-200 transition duration-300 text-sm sm:text-base cursor-pointer"
             >
               <CalendarDays className="h-5 w-5" /> Odeslat poptávku
             </button>

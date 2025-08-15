@@ -21,20 +21,20 @@ export default function Hero() {
             </span>
             .
           </h1>
-          <p className="mt-4 text-zinc-700 dark:text-zinc-200 sm:text-lg text-md">
+          <p className="mt-4 text-zinc-700 dark:text-zinc-200 sm:text-lg text-base">
             Navštěvujeme školy, knihovny a veřejné instituce po celé ČR a učíme
             jednoduché, účinné návyky proti nejčastějším online rizikům.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="#rezervace"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-md"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-600 transition duration-300 text-sm sm:text-base"
             >
               <CalendarDays className="h-5 w-5" /> Rezervovat termín
             </a>
             <a
               href="#programy"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800  transition duration-300 text-sm sm:text-md"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800  transition duration-300 text-sm sm:text-base"
             >
               <Play className="h-5 w-5" /> Zobrazit programy
             </a>
@@ -73,7 +73,9 @@ export default function Hero() {
               <Lock className="h-5 w-5" />
             </div>
             <div>
-              <p className="font-medium text-sm sm:text-md">Praktické ukázky</p>
+              <p className="font-medium text-sm sm:text-base">
+                Praktické ukázky
+              </p>
               <p className="sm:text-sm text-xs text-zinc-600 dark:text-zinc-300">
                 Hesla, phishing, sdílení informací
               </p>
