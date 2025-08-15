@@ -38,7 +38,7 @@ export default function ForSchools() {
             </a>
             <a
               href="#faq"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white transition duration-300 text-sm sm:text-base"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white transition duration-300 text-sm sm:text-base hover:text-orange-600 dark:hover:text-orange-400"
             >
               <ExternalLink className="h-5 w-5" /> Přečíst FAQ
             </a>

@@ -34,7 +34,7 @@ export default function Hero() {
             </a>
             <a
               href="#programy"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800  transition duration-300 text-sm sm:text-base"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800  transition duration-300 text-sm sm:text-base hover:text-orange-600 dark:hover:text-orange-400"
             >
               <Play className="h-5 w-5" /> Zobrazit programy
             </a>
