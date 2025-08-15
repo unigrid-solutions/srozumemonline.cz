@@ -3,8 +3,8 @@ import { CalendarDays, Play, Lock, CheckCircle2 } from "lucide-react";
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden dark:bg-zinc-900">
-      <div className="absolute -top-40 -right-40 h-80 w-80 bg-gradient-to-br from-orange-500/20 to-rose-500/20 rounded-full blur-3xl" />
-      <div className="absolute -bottom-40 -left-40 h-80 w-80 bg-gradient-to-tr from-sky-500/20 to-violet-500/20 rounded-full blur-3xl" />
+      <div className="absolute -top-40 -right-40 h-80 w-80 bg-gradient-to-br from-orange-500/20 to-rose-500/20 dark:from-orange-400/30 dark:to-rose-400/30 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 h-80 w-80 bg-gradient-to-tr from-sky-500/20 to-violet-500/20 dark:from-sky-400/30 dark:to-violet-400/30 rounded-full blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 lg:py-14 xl:py-24 grid lg:grid-cols-2 lg:gap-12 items-center">
         <div>
