@@ -1,6 +1,7 @@
 import { CalendarDays } from "lucide-react";
 import { useState } from "react";
 
+// Reservation komponenta s dark mode
 export default function Reservation() {
   const [submitted, setSubmitted] = useState(false);
   return (
@@ -11,11 +12,11 @@ export default function Reservation() {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
               Rezervovat přednášku
             </h2>
-            <p className="mt-2 text-zinc-700">
+            <p className="mt-2 text-zinc-700 dark:text-zinc-200">
               Napište nám, kdo jste a jaké termíny preferujete. Ozveme se do 1
               pracovního dne.
             </p>
-            <div className="mt-6 p-5 rounded-2xl border border-emerald-200 bg-emerald-50/60 text-emerald-900 text-sm">
+            <div className="mt-6 p-5 rounded-2xl border border-emerald-200 dark:border-emerald-700 bg-emerald-50/60 dark:bg-emerald-900/60 text-emerald-900 dark:text-emerald-50 text-sm">
               <p className="font-medium">Informace o soukromí</p>
               <p className="mt-1">
                 Vaše údaje používáme pouze k vyřízení poptávky. Žádné
@@ -29,7 +30,7 @@ export default function Reservation() {
               e.preventDefault();
               setSubmitted(true);
             }}
-            className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm"
+            className="rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-6 shadow-sm"
           >
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
@@ -38,7 +39,7 @@ export default function Reservation() {
                 </label>
                 <input
                   required
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:focus:ring-orange-400"
                   placeholder="ZŠ Rakovník / Městská knihovna"
                 />
               </div>
@@ -48,7 +49,7 @@ export default function Reservation() {
                 </label>
                 <input
                   required
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="Jméno a příjmení"
                 />
               </div>
@@ -57,7 +58,7 @@ export default function Reservation() {
                 <input
                   type="email"
                   required
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="vy@example.cz"
                 />
               </div>
@@ -65,7 +66,7 @@ export default function Reservation() {
                 <label className="block text-sm font-medium">Telefon</label>
                 <input
                   type="tel"
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="+420"
                 />
               </div>
@@ -75,7 +76,7 @@ export default function Reservation() {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="např. libovolné úterý v říjnu"
                 />
               </div>
@@ -85,7 +86,7 @@ export default function Reservation() {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="např. 6.–9. třída, ~60 žáků"
                 />
               </div>
@@ -93,7 +94,7 @@ export default function Reservation() {
                 <label className="block text-sm font-medium">Zpráva</label>
                 <textarea
                   rows={4}
-                  className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2"
+                  className="mt-1 w-full rounded-xl border border-zinc-300 dark:border-zinc-600 px-3 py-2"
                   placeholder="Cíle, zájmová témata, AV technika…"
                 />
               </div>
@@ -108,12 +109,12 @@ export default function Reservation() {
             </div>
             <button
               type="submit"
-              className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 text-white font-medium hover:bg-orange-700 transition text-sm sm:text-md cursor-pointer"
+              className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 dark:bg-orange-500 text-white font-medium hover:bg-orange-700 dark:hover:bg-orange-200 transition duration-300 text-sm sm:text-md cursor-pointer"
             >
               <CalendarDays className="h-5 w-5" /> Odeslat poptávku
             </button>
             {submitted && (
-              <p className="mt-3 text-sm text-emerald-700">
+              <p className="mt-3 text-sm text-emerald-700 dark:text-emerald-200">
                 Děkujeme! Brzy se ozveme.
               </p>
             )}

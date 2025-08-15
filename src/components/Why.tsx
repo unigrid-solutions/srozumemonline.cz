@@ -23,11 +23,13 @@ export default function Why() {
         ].map((w, i) => (
           <div
             key={i}
-            className="p-6 rounded-2xl bg-white border border-zinc-200"
+            className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700"
           >
-            <w.icon className="h-6 w-6 text-orange-600" />
+            <w.icon className="h-6 w-6 text-orange-600 dark:text-orange-400" />
             <h3 className="mt-3 font-semibold">{w.title}</h3>
-            <p className="mt-2 text-sm text-zinc-600">{w.text}</p>
+            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+              {w.text}
+            </p>
           </div>
         ))}
       </div>

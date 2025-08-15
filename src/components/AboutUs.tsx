@@ -4,6 +4,7 @@ import {
   GlobeLock,
   LaptopMinimal,
 } from "lucide-react";
+
 export default function AboutUs() {
   return (
     <section id="about" className="xl:py-16 md:py-12 py-10 lg:py-24">
@@ -12,31 +13,36 @@ export default function AboutUs() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
             Kdo jsme
           </h2>
-          <p className="mt-4 text-zinc-700">
+          <p className="mt-4 text-zinc-700 dark:text-zinc-200">
             Spojujeme zkušenosti z IT a kyberbezpečnosti se vzděláváním.
             Zaměřujeme se na to, co je pro běžné uživatele opravdu důležité:{" "}
-            <strong>rozpoznání hrozby</strong> a <strong>klidná reakce.</strong>
+            <strong className="dark:text-white">rozpoznání hrozby</strong> a{" "}
+            <strong className="dark:text-white">klidná reakce.</strong>
           </p>
           <div className="mt-6 flex items-center gap-6 justify-center lg:justify-start">
             <div className="text-sm">
               <img
                 src="img/brtnik_lite.jpeg"
                 alt="Vláďa"
-                className="w-36 h-[166px] rounded-xl object-cover border-1 border-white shadow-sm mb-1"
+                className="w-36 h-[166px] rounded-xl object-cover border-1 border-white shadow-sm mb-1 lg:mb-2"
               />
-              <span>Vladislav Bouška</span>
+              <span className="dark:text-white">Vladislav Bouška</span>
               <br />
-              <span className="text-zinc-600">Lektor kyberbezpečnosti</span>
+              <span className="text-zinc-600 dark:text-zinc-400">
+                Lektor kyberbezpečnosti
+              </span>
             </div>
             <div className="text-sm">
               <img
                 src="img/kubenzi.jpeg"
                 alt="Kuba"
-                className="w-36 h-[166px] rounded-xl object-cover border-1 border-white shadow-sm mb-1"
+                className="w-36 h-[166px] rounded-xl object-cover border-1 border-white shadow-sm mb-1 lg:mb-2"
               />
-              <span>Jakub Englický</span>
+              <span className="dark:text-white">Jakub Englický</span>
               <br />
-              <span className="text-zinc-600">IT specialista a lektor</span>
+              <span className="text-zinc-600 dark:text-zinc-400">
+                IT specialista a lektor
+              </span>
             </div>
           </div>
         </div>
@@ -66,11 +72,13 @@ export default function AboutUs() {
           ].map((c, i) => (
             <div
               key={i}
-              className="p-5 rounded-2xl border border-zinc-200 bg-white hover:shadow-sm transition"
+              className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:shadow-sm transition duration-300"
             >
-              <c.icon className="h-6 w-6 text-orange-600" />
-              <h3 className="mt-3 font-semibold">{c.title}</h3>
-              <p className="mt-2 text-sm text-zinc-600">{c.text}</p>
+              <c.icon className="h-6 w-6 text-orange-600 dark:text-orange-400" />
+              <h3 className="mt-3 font-semibold dark:text-white">{c.title}</h3>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+                {c.text}
+              </p>
             </div>
           ))}
         </div>

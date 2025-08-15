@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 export default function InternetSafetyLanding() {
   return (
-    <main className="min-h-screen bg-zinc-50 text-zinc-900">
+    <main className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50">
       {/* Navigace */}
       <Header />
 

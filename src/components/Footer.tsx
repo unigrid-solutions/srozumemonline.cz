@@ -2,7 +2,7 @@ import { ShieldCheck, Mail, Phone, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="py-10 border-t border-zinc-200 bg-white">
+    <footer className="py-10 border-t border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-start">
         <div>
           <div className="flex items-center gap-3">
@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <span className="font-semibold">S rozumem online</span>
           </div>
-          <p className="mt-3 text-sm text-zinc-600 max-w-sm">
+          <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-300 max-w-sm">
             Praktické přednášky o bezpečnosti na internetu a základní
             kybernetické bezpečnosti pro školy a veřejnost.
           </p>
@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
           </div> */}
       </div>
-      <div className="mt-8 text-center text-xs text-zinc-500">
+      <div className="mt-8 text-center text-xs text-zinc-500 dark:text-zinc-400">
         © {new Date().getFullYear()} S rozumem online. Všechna práva vyhrazena.
       </div>
     </footer>
